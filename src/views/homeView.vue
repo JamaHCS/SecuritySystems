@@ -1,5 +1,10 @@
 <template>
+<div>
     <structure-doc />
+    <structure-doc />
+    <structure-doc />
+    <structure-doc />
+</div>
 </template>
 
 <script>
