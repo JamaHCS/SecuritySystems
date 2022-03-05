@@ -1,0 +1,11 @@
+.list-group-item {
+    background-color: var(--color-main-background);
+    border-color: var(--color-border);
+    color: var(--color-text);
+
+    &.disabled, .list-group-item:disabled {
+        color: var(--color-text);
+        pointer-events: none;
+        background-color: var(--color-secondary-foreground);
+    }
+}

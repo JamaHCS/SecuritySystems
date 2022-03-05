@@ -1,0 +1,7 @@
+.dark-theme .tooltip-inner {
+    background-color: $color-secondary-foreground;
+    color: $color-text;
+}
+.dark-theme .arrow:before {
+    border-top-color: $color-text;
+}

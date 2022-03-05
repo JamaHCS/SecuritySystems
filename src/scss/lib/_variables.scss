@@ -1,0 +1,318 @@
+@import './themes/intellij-light';
+@import './themes/dracula-colors';
+
+$color-tritonix: #0C4A86;
+
+$c-font-size-base: 13;
+$c-font-size: $c-font-size-base + px;
+$c-border-radius-base: 2.5;
+$c-border-radius: $c-border-radius-base + px;
+$c-border-radius-tables: $c-border-radius-base + 1 + px;
+$c-datatable-padding-td: 4px;
+$c-transition-time: 200ms;
+$c-desaturated-base-unit: 10%;
+
+$color-box-shadow-base: #9aa1ab;
+$color-box-shadow-t: rgba($color-box-shadow-base, 0.20);
+$color-box-shadow-base-light: #fff;
+$color-box-shadow-light-t: rgba($color-box-shadow-base-light, 0.85);
+//$color-box-shadow-2: rgba(154, 161, 171, 0.25);
+
+$color-dz-shadow-base: #393939;
+$color-dz-shadow-t: rgba($color-dz-shadow-base, 0.3);
+$color-dz-shadow-t-2: rgba($color-dz-shadow-base, 0.1);
+
+$scroll-1: #ccc;
+$scroll-2: #b3b3b3;
+$scroll-3: #999999;
+$scroll-4: #d4d4d4;
+$scroll-5: #e1e1e1;
+
+// Various colors
+$white: #fff;
+$black: #262626;
+$black-t: rgba($black, 0.5);
+$black-2-t: rgba($black, 0.8);
+$text-color: #676a6c; // Body text
+$light-gray: #D1DADE; // Default label, badge
+$label-badge-color: #5E5E5E;
+$light-blue: #f3f6fb;
+$color-caret: #e3e3e3;
+
+// datatable colors
+$color-th: darken($color-lt-background-1, 5%);
+$color-tr-1: $white;
+$color-tr-1-darken: darken($white, 5%);
+$color-tr-2: #f9f9f9;
+$color-tr-2-darken: darken(#f9f9f9, 2%);
+$color-tr-3: #acbad4;
+$color-tr-4: #f6f6f6;
+$color-tr-5: #aab7d1;
+$color-tr-6: #fafafa;
+$color-tr-7: #acbad5;
+$color-tr-8: #f1f1f1;
+$color-tr-9: #f3f3f3;
+$color-tr-10: #a6b4cd;
+$color-tr-11: #a8b5cf;
+$color-tr-12: #a9b7d1;
+$color-tr-13: #fcfcfc;
+$color-tr-14: #fefefe;
+$color-tr-15: #acbad5;
+$color-tr-16: #aebcd6;
+$color-tr-17: #afbdd8;
+$color-tr-18: #eaeaea;
+$color-tr-19: #ececec;
+$color-tr-20: #efefef;
+$color-tr-21: #a2aec7;
+$color-tr-22: #a3b0c9;
+$color-tr-23: #a5b2cb;
+$color-tr-24: lighten(#f4f4f4, 4%);
+$color-tr-24-darken: darken($color-tr-24, 3%);
+$color-tr-25: darken($color-tr-1, 3%);
+$color-tr-25-darken: darken($color-tr-25, 3%);
+$color-tr-26: $white;
+$color-tr-26-darken: darken($white, 2%);
+
+$color-secondary-foreground: $color-lt-background-1;
+$color-secondary-foreground-darken: darken($color-secondary-foreground, 20%);
+$color-tertiary-foreground: darken($color-secondary-foreground, 10%);
+$color-tertiary-foreground-darken: darken($color-secondary-foreground, 25%);
+//$color-main-background: $color-lt-background-2;
+$color-main-background: #fafbfe;
+$color-secondary-background: $color-secondary-foreground;
+
+$color-primary: lighten($theme-color-primary, 0%);
+//$color-primary: #727cf5;
+//$color-primary: #2aabe4;
+$color-primary-desaturated: desaturate($color-primary, $c-desaturated-base-unit);
+$color-primary-t: $color-primary + '88';
+$color-primary-lighten: lighten($color-primary, 9%);
+$color-primary-lighten-t: lighten($color-primary-lighten, 20%);
+$color-primary-darken: darken($color-primary, 7%);
+$color-primary-darkest: darken($color-primary, 10%);
+
+$color-secondary: darken($color-td-CYAN, 42%);
+$color-secondary-desaturated: desaturate($color-secondary, $c-desaturated-base-unit);
+//$color-secondary: #0acf97;
+//$color-secondary: lighten($theme-color-primary, 0%);
+$color-secondary-t: $color-secondary + '88';
+$color-secondary-lighten: lighten($color-secondary, 9%);
+$color-secondary-lighten-t: lighten($color-secondary-lighten, 20%);
+$color-secondary-darken: darken($color-secondary, 3%);
+$color-secondary-darkest: darken($color-secondary, 11%);
+
+$color-tertiary-base: #2e9a9a;
+$color-tertiary: $color-tertiary-base;
+$color-tertiary-desaturated: desaturate($color-tertiary, $c-desaturated-base-unit);
+$color-tertiary-t: rgba($color-tertiary, 0.5);
+$color-tertiary-lighten: lighten($color-tertiary, 9%);
+$color-tertiary-lighten-t: lighten($color-tertiary-lighten, 20%);
+$color-tertiary-darken: darken($color-tertiary, 3%);
+$color-tertiary-darkest: darken($color-tertiary-darken, 7%);
+
+$color-quaternary-base: #2F4057;
+$color-quaternary: $color-quaternary-base;
+$color-quaternary-desaturated: desaturate($color-quaternary, $c-desaturated-base-unit);
+$color-quaternary-t: rgba($color-quaternary, 0.5);
+$color-quaternary-lighten: lighten($color-quaternary, 10%);
+$color-quaternary-lighten-t: lighten($color-quaternary, 30%);
+$color-quaternary-lightest: lighten($color-quaternary, 15%);
+$color-quaternary-darken: darken($color-quaternary, 5%);
+
+$color-white-base: $color-secondary-foreground;
+$color-white: $color-white-base;
+$color-white-desaturated: desaturate($color-white, $c-desaturated-base-unit);
+$color-white-t: rgba($color-white, 0.5);
+$color-white-lighten: lighten($color-white, 10%);
+$color-white-lighten-t: lighten($color-white, 30%);
+$color-white-lightest: lighten($color-white, 15%);
+$color-white-darken: darken($color-white, 5%);
+
+$color-alice-base: #EBF0F5;
+$color-alice: $color-alice-base;
+$color-alice-desaturated: desaturate($color-alice, $c-desaturated-base-unit);
+$color-alice-t: rgba($color-alice, 0.5);
+$color-alice-lighten: lighten($color-alice, 10%);
+$color-alice-lighten-t: lighten($color-alice, 30%);
+$color-alice-lightest: lighten($color-alice, 15%);
+$color-alice-darken: darken($color-alice, 5%);
+
+//$color-success: darken($color-td-GREEN, 30%);
+$color-success: #138a45;
+$color-success-desaturated: desaturate($color-success, $c-desaturated-base-unit);
+//$color-success: #39afd1;
+$color-success-t: $color-success + '88';
+$color-success-lighten: lighten($color-success, 15%);
+$color-success-lighten-t: lighten($color-success-lighten, 40%);
+$color-success-darken: darken($color-success, 7%);
+
+//$color-error: darken($color-td-RED, 25%);
+$color-error: #c43131;
+$color-error-desaturated: desaturate($color-error, $c-desaturated-base-unit);
+$color-error-t: $color-error + '88';
+$color-error-lighten: lighten($color-error, 9%);
+$color-error-lighten-t: lighten($color-error-lighten, 20%);
+$color-error-darken: darken($color-error, 3%);
+$color-error-darkest: darken($color-error, 7%);
+
+$color-warning: $theme-color-warning;
+$color-warning-desaturated: desaturate($color-warning, $c-desaturated-base-unit);
+//$color-warning: #ffcd24;
+$color-warning-t: $color-warning + '88';
+$color-warning-lighten: lighten($color-warning, 20%);
+$color-warning-lighten-t: lighten($color-warning, 22%);
+$color-warning-darken: darken($color-warning, 30%);
+
+$color-shadow-base: $color-td-COMMENT;
+//$color-shadow: $color-shadow-base;
+//$color-shadow-desaturated: desaturate($color-shadow, $c-desaturated-base-unit);
+//$color-shadow-t: rgba($color-shadow, 0.5);
+//$color-shadow-lighten: lighten($color-shadow, 9%);
+//$color-shadow-lighten-t: lighten($color-shadow-lighten, 20%);
+//$color-shadow-lightest: lighten($color-shadow-lighten, 10%);
+//$color-shadow-darken: darken($color-shadow, 10%);
+//$color-shadow-darkest: darken($color-shadow, 10%);
+
+//$color-gray: #666b6e;
+$color-info: #39afd1;
+$color-info-desaturated: desaturate($color-info, $c-desaturated-base-unit);
+$color-info-t: $color-info + '88';
+$color-info-lighten: lighten($color-info, 20%);
+$color-info-lighten-t: lighten($color-info-lighten, 10%);
+$color-info-darken: darken($color-info, 9%);
+
+//$color-light: darken($color-theme-light, 5%);
+$color-light: #9dc8e4;
+$color-light-desaturated: desaturate($color-light, $c-desaturated-base-unit);
+$color-light-lighten: lighten($color-light, 2.5%);
+$color-light-lightest: lighten($color-light, 20%);
+$color-light-darken: darken($color-light, 3%);
+$color-light-darkest: darken($color-light, 11%);
+
+$color-dark: $color-theme-dark;
+$color-dark-t: $color-dark + '88';
+$color-dark-format-bg: rgba($color-dark, 0.15);
+$color-dark-lighten: lighten($color-dark, 30%);
+$color-dark-lighten-t: lighten($color-dark-lighten, 20%);
+
+$code-container-bg: $code-theme-container-bg;
+
+$base-border: darken(#e7eaec, 5%);
+$color-border: darken($base-border, 5%);
+$color-border-lighten: lighten($base-border, 1.5%);
+$color-border-darken: darken($base-border, 25%);
+
+$color-text: $text-color;
+$color-text-light: darken($white, 2%);
+$color-text-t: $text-color + '55';
+$color-text-lighten: lighten($color-text, 20%);
+$color-text-darken: darken($color-text, 10%);
+$color-text-muted: #888888;
+$color-muted-secondary: #999c9e;
+
+//Navigation
+$nav-bg: $color-quaternary;
+$nav-bg-lightest: $color-quaternary-lightest;
+$nav-active: $color-quaternary-darken;
+$nav-second-level: #293846;
+$nav-text-color: #a7b1c2;
+$dark-border: #2F4050;
+
+$link-nav: #a7b1c2;
+$link-nav-darken: darken($link-nav, 12%);
+
+$color-tittles: $color-primary;
+
+$color-1: $white;
+$color-2: $black;
+$color-3: $color-shadow-base;
+$color-4: $color-error;
+$color-5: $color-primary;
+$color-6: darken($color-td-PINK, 15%);
+$color-7: darken($color-success, 4%);
+$color-8: $color-warning;
+$color-9: $color-secondary;
+
+// Inspinia Colors
+$navy: $color-primary; // Primary color
+$dark-gray: $color-shadow-base; // Default color
+$blue: $color-primary; // Success color
+$lazur: $color-secondary; // Info color
+$yellow: $color-warning; // Warning color
+$red: $color-error; // Danger color
+
+// Spinner color and margin
+$spin-color: $navy;
+$spin-margin: 0 auto;
+
+// IBOX colors ( default panel colors)
+$border-color: #e7eaec; // IBox border
+$ibox-title-bg: #ffffff; // IBox Background header
+$ibox-content-bg: #ffffff; // IBox Background content
+
+//Sidebar width
+$sidebar-width: 220px;
+
+// Boxed layout width
+$boxed-width: 1200px;
+
+//Border radius for buttons
+$btn-border-radius: 3px;
+
+$text-muted: $color-text-muted;
+$gray: $color-main-background; // Background wrapper color
+
+
+:export {
+    colorTritonix: $color-tritonix;
+    textColor: $text-color;
+    gray: $gray;
+    navBg: $nav-bg;
+    navSecondLevel: $nav-second-level;
+    navTextColor: $nav-text-color;
+    darkBorder: $dark-border;
+    colorSecondaryForeground: $color-lt-background-1;
+    colorMainBackground: $color-lt-background-2;
+    colorSecondaryBackground: $color-secondary-foreground;
+    colorPrimary: $color-primary;
+    colorSecondary: $color-secondary;
+    colorSuccess: $color-success;
+    colorError: $color-error;
+    colorWarning: $color-warning;
+    colorGray: $color-shadow-base;
+    colorLight: $color-light;
+    colorDark: $color-dark;
+    codeContainerBg: $code-container-bg;
+    colorBorder: $light-gray;
+    colorText: $text-color;
+    colorTextMuted: #888888;
+    colorMutedSecondary: #999c9e;
+    linkNav: #a7b1c2;
+    white: #fff;
+    black: #262626;
+    colorTittles: $color-primary;
+    navy: $color-primary; // Primary color
+    darkGray: $color-shadow-base; // Default color
+    blue: $color-primary; // Success color
+    lazur: $color-secondary; // Info color
+    yellow: $color-warning; // Warning color
+    red: $color-error; // Danger color
+    spinColor: $navy;
+    spinMargin: 0 auto;
+    borderColor: #e7eaec; // IBox border
+    iboxTitle-bg: #ffffff; // IBox Background header
+    iboxContent-bg: #ffffff; // IBox Background content
+    sidebarWidth: 220px;
+    boxedWidth: 1200px;
+    btnBorder-radius: 3px;
+    textMuted: $color-text-muted;
+    color1: $color-1;
+    color2: $color-2;
+    color3: $color-3;
+    color4: $color-4;
+    color5: $color-5;
+    color6: $color-6;
+    color7: $color-7;
+    color8: $color-8;
+    color9: $color-9;
+}

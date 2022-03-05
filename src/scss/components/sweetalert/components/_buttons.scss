@@ -1,0 +1,150 @@
+.swal-footer {
+    text-align: right;
+    padding-top: 13px;
+    margin-top: 13px;
+    padding: 13px 16px;
+    border-radius: inherit;
+    border-top-left-radius: 0;
+    border-top-right-radius: 0;
+}
+
+.swal-button-container {
+    margin: 5px;
+    display: inline-block;
+    position: relative;
+}
+
+.swal-button {
+    @extend .btn;
+    @extend .btn-primary;
+}
+
+.swal{
+    &-primary {
+        .swal-footer {
+            .swal-button-container {
+                & button {
+                    @extend .btn-default;
+                }
+
+                &:last-child button {
+                    @extend .btn-primary;
+                }
+            }
+        }
+    }
+
+    &-secondary {
+        .swal-footer {
+            .swal-button-container {
+                & button {
+                    @extend .btn-default;
+                }
+
+                &:last-child button {
+                    @extend .btn-secondary;
+                }
+            }
+        }
+    }
+
+    &-tertiary {
+        .swal-footer {
+            .swal-button-container {
+                & button {
+                    @extend .btn-default;
+                }
+
+                &:last-child button {
+                    @extend .btn-tertiary;
+                }
+            }
+        }
+    }
+
+    &-quaternary {
+        .swal-footer {
+            .swal-button-container {
+                & button {
+                    @extend .btn-default;
+                }
+
+                &:last-child button {
+                    @extend .btn-quaternary;
+                }
+            }
+        }
+    }
+
+    &-danger {
+        .swal-footer {
+            .swal-button-container {
+                & button {
+                    @extend .btn-default;
+                }
+
+                &:last-child button {
+                    @extend .btn-danger;
+                }
+            }
+        }
+    }
+
+    &-warning {
+        .swal-footer {
+            .swal-button-container {
+                & button {
+                    @extend .btn-default;
+                }
+
+                &:last-child button {
+                    @extend .btn-warning;
+                }
+            }
+        }
+    }
+
+    &-default {
+        .swal-footer {
+            .swal-button-container {
+                & button {
+                    @extend .btn-default;
+                }
+
+                &:last-child button {
+                    & button {
+                        @extend .btn-default;
+                    }
+                }
+            }
+        }
+    }
+
+    &-alice {
+        .swal-footer {
+            .swal-button-container {
+                & button {
+                    @extend .btn-default;
+                }
+
+                &:last-child button {
+                    @extend .btn-alice;
+                }
+            }
+        }
+    }
+    
+    &-success {
+        .swal-footer {
+            .swal-button-container {
+                & button {
+                    @extend .btn-default;
+                }
+
+                &:last-child button {
+                    @extend .btn-success;
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,33 @@
+.swal-content {
+    padding: 0 20px;
+    margin-top: 20px;
+    font-size: initial;
+
+    &:last-child {
+        margin-bottom: 20px;
+    }
+
+    &__input,
+    &__textarea {
+        -webkit-appearance: none;
+        background-color: var(--color-1);
+        //border: none;
+        font-size: 14px;
+        display: block;
+        box-sizing: border-box;
+        width: 100%;
+        border: thin solid var(--color-border);
+        padding: 10px 13px;
+        border-radius: $c-border-radius;
+        transition: border-color 0.2s;
+
+        &:focus {
+            outline: none;
+            border-color: var(--color-primary);
+        }
+    }
+
+    &__textarea {
+        resize: vertical;
+    }
+}

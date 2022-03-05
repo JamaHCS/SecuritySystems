@@ -1,0 +1,44 @@
+.main-bg {
+    background-color: var(--color-main-background) !important;
+}
+
+.secondary-bg {
+    background-color: var(--color-secondary-foreground) !important;
+}
+
+.gray-bg, .bg-muted {
+    background-color: var(--color-main-background);
+}
+
+.white-bg {
+    background-color: var(--color-secondary-foreground);
+}
+
+.blue-bg {
+    background-color: var(--blue);
+    color: var(--color-text-light);
+}
+
+.navy-bg {
+    background-color: var(--color-primary);
+    color: var(--color-text-light);
+}
+
+.lazur-bg {
+    background-color: var(--color-info);
+    color: var(--color-text-light);
+}
+
+.yellow-bg {
+    background-color: var(--color-warning);
+    color: var(--color-text-light);
+}
+
+.red-bg {
+    background-color: var(--color-error);
+    color: var(--color-text-light);
+}
+
+.black-bg {
+    background-color: var(--color-dark);
+}

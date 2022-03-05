@@ -1,0 +1,61 @@
+/*
+    tributeJs 5.1.3
+ */
+
+
+.scroll {
+    width: 100%;
+    max-height: 300px;
+    overflow-y: auto;
+    position: relative;
+}
+.v-tribute {
+    width: 100%;
+    position: relative;
+}
+
+// Tribute-specific styles
+.tribute-container {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: auto;
+    max-height: 300px;
+    max-width: 500px;
+    overflow: auto;
+    display: block;
+    z-index: 999;
+    border-radius: $c-border-radius;
+    box-shadow: 0 1px 4px var(--color-border);
+}
+.tribute-container ul {
+    margin: 0;
+    margin-top: 2px;
+    padding: 0;
+    list-style: none;
+    background: var(--color-secondary-foreground);
+    border-radius: $c-border-radius;
+    border: thin solid var(--color-border);
+    background-clip: padding-box;
+    overflow: hidden;
+}
+.tribute-container li {
+    color: var(--color-primary);
+    padding: 5px 10px;
+    cursor: pointer;
+    font-size: 0.9rem;
+}
+.tribute-container li.highlight,
+.tribute-container li:hover {
+    background: var(--color-primary);
+    color: var(--color-1);
+}
+.tribute-container li span {
+    font-weight: bold;
+}
+.tribute-container li.no-match {
+    cursor: default;
+}
+.tribute-container .menu-highlighted {
+    font-weight: bold;
+}

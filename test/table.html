@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./../dist/css/cooper.css">
+</head>
+<body class="p-5">
+    <div id="example_wrapper" class="dataTables_wrapper" style="width: 50%">
+        <div class="dataTables_length" id="example_length"><label>Show <select name="example_length" aria-controls="example"
+                    class="">
+                    <option value="10">10</option>
+                    <option value="25">25</option>
+                    <option value="50">50</option>
+                    <option value="100">100</option>
+                </select> entries</label></div>
+        <div id="example_filter" class="dataTables_filter"><label>Search:<input type="search" class="" placeholder=""
+                    aria-controls="example"></label></div>
+        <table id="example" class="display nowrap dataTable dtr-inline collapsed" style="width: 100%;"
+            aria-describedby="example_info">
+            <thead>
+                <tr>
+                <th class="sorting" tabindex="0" aria-controls="example" rowspan="1" colspan="1" style="width: 120px;"
+                    aria-label="Name: activate to sort column ascending">
+                    <input class="form-control" placeholder="placeholder..."/>
+                </th>
+                <th class="sorting" tabindex="0" aria-controls="example" rowspan="1" colspan="1" style="width: 192px;"
+                    aria-label="Position: activate to sort column ascending">
+                                    <input class="form-control" placeholder="placeholder..." />
+                </th>
+                <th class="sorting" tabindex="0" aria-controls="example" rowspan="1" colspan="1" style="width: 89px;"
+                    aria-label="Office: activate to sort column ascending">
+                                    <input class="form-control" placeholder="placeholder..."/>
+</th>
+                <th class="dt-body-right sorting sorting_asc" tabindex="0" aria-controls="example" rowspan="1" colspan="1"
+                    style="width: 35px;" aria-label="Age: activate to sort column descending" aria-sort="ascending">
+                                    <input class="form-control" placeholder="placeholder..."/>
+</th>
+                <th class="sorting" tabindex="0" aria-controls="example" rowspan="1" colspan="1" style="width: 78px;"
+                    aria-label="Start date: activate to sort column ascending">
+                                    <input class="form-control" placeholder="placeholder..."/>
+</th>
+                <th class="dt-body-right sorting" tabindex="0" aria-controls="example" rowspan="1" colspan="1"
+                    style="width: 0px; display: none;" aria-label="Salary: activate to sort column ascending">
+                                        <input class="form-control" placeholder="placeholder..."/>
+
+                </th>
+            </tr>
+                <tr>
+                    <th class="sorting" tabindex="0" aria-controls="example" rowspan="1" colspan="1" style="width: 120px;"
+                        aria-label="Name: activate to sort column ascending">Name</th>
+                    <th class="sorting" tabindex="0" aria-controls="example" rowspan="1" colspan="1" style="width: 192px;"
+                        aria-label="Position: activate to sort column ascending">Position</th>
+                    <th class="sorting" tabindex="0" aria-controls="example" rowspan="1" colspan="1" style="width: 89px;"
+                        aria-label="Office: activate to sort column ascending">Office</th>
+                    <th class="dt-body-right sorting sorting_asc" tabindex="0" aria-controls="example" rowspan="1"
+                        colspan="1" style="width: 35px;" aria-label="Age: activate to sort column descending"
+                        aria-sort="ascending">Age</th>
+                    <th class="sorting" tabindex="0" aria-controls="example" rowspan="1" colspan="1" style="width: 78px;"
+                        aria-label="Start date: activate to sort column ascending">Start date</th>
+                    <th class="dt-body-right sorting" tabindex="0" aria-controls="example" rowspan="1" colspan="1"
+                        style="width: 0px; display: none;" aria-label="Salary: activate to sort column ascending">Salary
+                    </th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr class="odd">
+                    <td class="" tabindex="0">Tatyana Fitzpatrick</td>
+                    <td class="">Regional Director</td>
+                    <td class="">London</td>
+                    <td class="dt-body-right sorting_1">19</td>
+                    <td>2010/03/17</td>
+                    <td class=" dt-body-right" style="display: none;">$385,750</td>
+                </tr>
+                <tr class="even">
+                    <td class="" tabindex="0">Shou Itou</td>
+                    <td class="">Regional Marketing</td>
+                    <td class="">Tokyo</td>
+                    <td class="dt-body-right sorting_1">20</td>
+                    <td>2011/08/14</td>
+                    <td class=" dt-body-right" style="display: none;">$163,000</td>
+                </tr>
+                <tr class="odd">
+                    <td class="" tabindex="0">Lael Greer</td>
+                    <td class="">Systems Administrator</td>
+                    <td class="">London</td>
+                    <td class="dt-body-right sorting_1">21</td>
+                    <td>2009/02/27</td>
+                    <td class=" dt-body-right" style="display: none;">$103,500</td>
+                </tr>
+                <tr class="even">
+                    <td class="" tabindex="0">Caesar Vance</td>
+                    <td class="">Pre-Sales Support</td>
+                    <td class="">New York</td>
+                    <td class="dt-body-right sorting_1">21</td>
+                    <td>2011/12/12</td>
+                    <td class=" dt-body-right" style="display: none;">$106,450</td>
+                </tr>
+                <tr class="odd">
+                    <td tabindex="0" class="">Cedric Kelly</td>
+                    <td class="">Senior Javascript Developer</td>
+                    <td class="">Edinburgh</td>
+                    <td class="dt-body-right sorting_1">22</td>
+                    <td>2012/03/29</td>
+                    <td class=" dt-body-right" style="display: none;">$433,060</td>
+                </tr>
+                <tr class="even">
+                    <td class="" tabindex="0">Quinn Flynn</td>
+                    <td class="">Support Lead</td>
+                    <td class="">Edinburgh</td>
+                    <td class="dt-body-right sorting_1">22</td>
+                    <td>2013/03/03</td>
+                    <td class=" dt-body-right" style="display: none;">$342,000</td>
+                </tr>
+                <tr class="odd">
+                    <td class="" tabindex="0">Gavin Cortez</td>
+                    <td class="">Team Leader</td>
+                    <td class="">San Francisco</td>
+                    <td class="dt-body-right sorting_1">22</td>
+                    <td>2008/10/26</td>
+                    <td class=" dt-body-right" style="display: none;">$235,500</td>
+                </tr>
+                <tr class="even">
+                    <td tabindex="0" class="">Sonya Frost</td>
+                    <td class="">Software Engineer</td>
+                    <td class="">Edinburgh</td>
+                    <td class="dt-body-right sorting_1">23</td>
+                    <td>2008/12/13</td>
+                    <td class=" dt-body-right" style="display: none;">$103,600</td>
+                </tr>
+                <tr class="odd">
+                    <td class="" tabindex="0">Doris Wilder</td>
+                    <td class="">Sales Assistant</td>
+                    <td class="">Sydney</td>
+                    <td class="dt-body-right sorting_1">23</td>
+                    <td>2010/09/20</td>
+                    <td class=" dt-body-right" style="display: none;">$85,600</td>
+                </tr>
+                <tr class="even">
+                    <td class="" tabindex="0">Prescott Bartlett</td>
+                    <td class="">Technical Author</td>
+                    <td class="">London</td>
+                    <td class="dt-body-right sorting_1">27</td>
+                    <td>2011/05/07</td>
+                    <td class=" dt-body-right" style="display: none;">$145,000</td>
+                </tr>
+            </tbody>
+
+        </table>
+        <div class="dataTables_info" id="example_info" role="status" aria-live="polite">Showing 1 to 10 of 57 entries</div>
+        <div class="dataTables_paginate paging_simple_numbers" id="example_paginate"><a
+                class="paginate_button previous disabled" aria-controls="example" data-dt-idx="0" tabindex="-1"
+                id="example_previous">Previous</a><span><a class="paginate_button current" aria-controls="example"
+                    data-dt-idx="1" tabindex="0">1</a><a class="paginate_button " aria-controls="example" data-dt-idx="2"
+                    tabindex="0">2</a><a class="paginate_button " aria-controls="example" data-dt-idx="3"
+                    tabindex="0">3</a><a class="paginate_button " aria-controls="example" data-dt-idx="4"
+                    tabindex="0">4</a><a class="paginate_button " aria-controls="example" data-dt-idx="5"
+                    tabindex="0">5</a><a class="paginate_button " aria-controls="example" data-dt-idx="6"
+                    tabindex="0">6</a></span><a class="paginate_button next" aria-controls="example" data-dt-idx="7"
+                tabindex="0" id="example_next">Next</a></div>
+    </div>
+</body>
+</html>

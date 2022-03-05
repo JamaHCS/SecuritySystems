@@ -1,0 +1,88 @@
+
+//      IntelliJ Light colors
+
+    
+    //      General color
+    
+    $color-lt-background-1: #fbfbfb;
+    $color-lt-background-2: #f3f3f4;
+    $color-lt-background-3: #E3F1F6;
+    $color-lt-foreground-1: rgba(9, 9, 16, 0.8);
+    $color-lt-foreground-2: #aaaaaa;
+    $color-lt-activeForeground: #808080;
+    $color-lt-selectionBackground: #E7E8F2;
+    $color-lt-inactiveSelectionBackground: #E7E8F2;
+    $color-lt-selectionHighlightBackground: #E7E8F2;
+    $color-lt-foreground-3: #090910;
+    $color-lt-border: #e6e6e6;
+    $color-lt-activeSelectionBackground: #055472;
+    $color-lt-focusOultine: #055472;
+    $color-lt-foreground-4: #090909;
+    $color-lt-foreground-5: #090910;
+    $color-lt-debuggingBackground: #ca473f;
+
+    $stackoverflow-light-bg: #f6f6f6;
+
+
+//      Token colors
+    $color-lt-comment: #93939e;
+    $color-lt-constant: #090910;
+    $color-lt-invalid: #981d15;
+    $color-lt-storage-modifier: #055472;
+    $color-lt-operators: #090910;
+    $color-lt-entity-name: #ca473f;
+    $color-lt-number-and-cosntants: #981d15;
+    $color-lt-keys: #669900;
+    $color-lt-class-and-supports: #ca473f;
+    $color-lt-entity-types: #ca473f;
+    $color-lt-this: #0782b1;  // rgb(7, 130, 177)
+    $color-lt-regular-expretions: #0782b1;
+    $color-lt-escape-characters: #0782b1;
+    $color-lt-python-functions: #0782b1;
+    $color-lt-python-decorators: #0782b1;
+    $color-lt-variables: #090910;
+    $color-lt-jsx-string: #055472;
+    $color-lt-php-variables: #0782B1;
+    $color-lt-php-class: #090910;
+    $color-lt-php-type-documentation: #93939E;
+    $color-lt-html-tag: #981d15;
+    $color-lt-puntuation-tag: #090910;
+    $color-lt-html-attribute: #690;
+    $color-lt-html-string: #055472;
+    $color-lt-css-class-and-support: #090910;
+    $color-lt-css-class: #055472;
+    $color-lt-css-puntuation-definition: #981D15;
+    $color-lt-json-puntuation: #055472;
+    $color-lt-template-tag-django: #ca473f;
+    $color-lt-storage-variable-django: #090910;
+    $color-lt-string-unquoted-django: #0782B1;
+    $color-lt-blade: #d52e26;
+    $color-lt-blade-construct: #090910;
+    $color-lt-class-constructor: #ffd055;
+    
+    $color-lt-brutal-blue: #0441a3;
+    $color-lt-yass-queen: #ff1d58;
+    $color-lt-sister-sister: #f75990;
+    $color-lt-crown-yellow: #fff685;
+    $color-lt-blue-light: #00DDFF;
+    $color-lt-redder-than-you: #ff3a22;
+    $color-button-vscode: #1a78ca;
+
+
+    $theme-color-primary: $color-button-vscode;
+    $theme-color-secondary: $color-lt-this;
+    $theme-color-success: $color-lt-keys;
+    $theme-color-error: $color-lt-blade;
+    $theme-color-warning: $color-lt-class-constructor;
+    $theme-color-gray: $color-lt-comment;
+    $color-theme-light: $color-lt-background-3;
+    $color-theme-dark: $color-lt-foreground-1;
+    $code-theme-container-bg: $stackoverflow-light-bg;
+
+    $theme-color-1: $theme-color-primary;
+    $theme-color-2: $color-lt-invalid;
+    $theme-color-3: $color-lt-storage-modifier;
+    $theme-color-4: $color-lt-entity-name;
+    $theme-color-5: $color-lt-keys;
+    $theme-color-6: $color-lt-class-constructor;
+    $theme-color-7: $color-lt-blue-light;

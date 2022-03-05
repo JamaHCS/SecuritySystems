@@ -1,0 +1,539 @@
+/* Buttons */
+
+button,
+button:active,
+button:focus {
+    outline: none !important;
+}
+
+.btn {
+    font-size: 1rem;
+    border-radius: $c-border-radius;
+    height: 30px;
+
+    &:focus {
+        outline: thin dotted !important;
+        outline: 5px auto -webkit-focus-ring-color !important;
+        outline-offset: -2px !important;
+    }
+
+    &:focus {
+        outline: none !important;
+        box-shadow: none !important;
+    }
+
+    //.btn-light,
+    &-dark,
+    &-theme-1,
+    &-theme-2,
+    &-white {
+        border: thin solid var(--color-border) !important;
+
+        & .dropdown-toggle:not(:disabled):not(.disabled):active {
+            border-color: var(--color-primary) !important;
+        }
+    }
+
+    &-dark,
+    &-theme-2 {
+        color: var(--color-light);
+    }
+
+    &-white,
+    &-theme-1,
+    &-default {
+        color: var(--color-text);
+
+        & .active {
+            color: var(--color-dark);
+        }
+    }
+
+    &.btn-icon {
+        color: var(--light-gray);
+        transition: 400ms ease;
+    }
+
+    &.btn-icon:hover {
+        color: var(--color-text);
+    }
+
+    &-default {
+        @extend .btn-white;
+        border: thin solid var(--color-border) !important;
+    }
+
+    &.btn-xs {
+        @extend .btn-sm;
+    }
+
+    &-sm span {
+        vertical-align: middle;
+    }
+}
+
+.btn-group a.btn-sm {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.btn-default.disabled,
+.btn-default:disabled,
+.disabled.note-btn.btn-light,
+.note-btn.btn-light:disabled {
+    border-color: var(--color-border) !important;
+    opacity: 0.4 !important;
+    cursor: not-allowed;
+    -webkit-box-shadow: none;
+    box-shadow: none;
+}
+
+span.caret {
+    display: none;
+}
+
+.nav.metismenu .dropdown-menu > li > a {
+    padding: 0;
+    display: block;
+}
+
+.nav.metismenu .dropdown-menu {
+    padding: 0.3rem;
+}
+
+.dropdown-menu > li > a {
+    border-radius: $c-border-radius;
+    line-height: 25px;
+    text-align: left;
+    font-weight: normal;
+    padding: 0;
+    margin: 0;
+    color: var(--color-text);
+    clear: both;
+    white-space: nowrap;
+}
+
+.dropdown-menu {
+    background-color: var(--color-main-background);
+}
+
+.open > .dropdown-menu {
+    display: block !important;
+}
+
+.pagination > li > a,
+.pagination > li > span {
+    @extend .btn-white;
+    position: relative;
+    float: left;
+    padding: 6px 12px;
+    margin-left: -1px;
+    line-height: 1.42857143;
+    color: var(--color-text);
+    text-decoration: none;
+    border: thin solid var(--color-border);
+}
+
+.pagination > li:first-child > a,
+.pagination > li:first-child > span {
+    margin-left: 0;
+    border-top-left-radius: 4px;
+    border-bottom-left-radius: 4px;
+}
+
+.pagination > .active > a,
+.pagination > .active > a:focus,
+.pagination > .active > a:hover,
+.pagination > .active > span,
+.pagination > .active > span:focus,
+.pagination > .active > span:hover {
+    z-index: 3;
+    color: var(--color-text-light);
+    cursor: default;
+    background-color: var(--color-primary);
+    border-color: var(--color-primary);
+}
+
+.fc-button-group {
+    @extend .btn-group;
+}
+
+.fc-button, .fc-state-default {
+    @extend .btn;
+    @extend .btn-theme-1;
+    box-shadow: none !important;
+    background-color: var(--color-1);
+    text-shadow: none !important;
+    background-image: none !important;
+}
+
+.dropdown-menu-right {
+    right: 0 !important;
+    left: auto !important;
+    //transform: translate3d(-4px, 32px, 0px) !important;
+}
+
+//.dropdown-menu[x-placement^=bottom],
+//.dropdown-menu[x-placement^=left],
+//.dropdown-menu[x-placement^=right],
+//.dropdown-menu[x-placement^=top] {
+//    right: auto !important;
+//    bottom: auto !important;
+//}
+
+.btn-outline-alice {
+    border-color: var(--color-alice);
+    color: var(--color-text);
+}
+
+.btn-alice {
+    border: 1px solid var(--color-border);
+    background-color: var(--color-alice);
+
+    &.active,
+    &.btn-toggle-checkbox.active {
+        border: 1px solid var(--color-border);
+        background-color: var(--color-alice-darken);
+    }
+
+    &:not(:disabled):not(.disabled):hover,
+    &:not(:disabled):not(.disabled):active {
+        border-color: var(--color-alice-darken);
+        background-color: var(--color-alice-darken);
+    }
+}
+
+.btn-outline-default {
+    border-color: var(--color-border);
+    color: var(--color-text);
+}
+
+.btn-outline-default {
+    border-color: var(--color-border);
+    color: var(--color-text);
+}
+
+.btn-default {
+    border: 1px solid var(--color-border);
+    background-color: var(--color-white);
+
+    &.active,
+    &.btn-toggle-checkbox.active,
+    &.dropdown-toggle {
+        border: 1px solid var(--color-border);
+        background-color: var(--color-white-darken);
+    }
+
+    &:not(:disabled):not(.disabled):hover,
+    &:not(:disabled):not(.disabled):active {
+        border-color: var(--color-white-darken);
+        background-color: var(--color-white-darken);
+    }
+}
+
+
+.btn-outline-white {
+    @extend .btn-outline-default;
+}
+
+.btn-white {
+    @extend .btn-default;
+}
+
+
+.dark-theme {
+    .btn-default {
+        color: var(--color-text);
+        border: 1px solid var(--color-border);
+        background-color: var(--color-secondary-foreground);
+
+        &.active,
+        &.btn-toggle-checkbox.active,
+        &.dropdown-toggle {
+            border: 1px solid var(--color-border);
+            background-color: var(--color-secondary-foreground-darken);
+            color: var(--color-text);
+        }
+
+        &:not(:disabled):not(.disabled):hover,
+        &:not(:disabled):not(.disabled):active {
+            color: var(--color-text);
+            border: 1px solid var(--color-border);
+            background-color: var(--color-secondary-foreground-darken);
+        }
+    }
+}
+
+.btn-outline-primary {
+    border-color: var(--color-primary);
+    color: var(--color-primary);
+}
+
+.btn-primary {
+    background-color: var(--color-primary);
+    border-color: var(--color-primary);
+
+    &.active,
+    &.btn-toggle-checkbox.active {
+        border-color: var(--color-primary);
+        background-color: var(--color-primary-darken);
+    }
+
+    &:not(:disabled):not(.disabled):hover,
+    &:not(:disabled):not(.disabled):active {
+        border-color: var(--color-primary-darken);
+        background-color: var(--color-primary-darken);
+    }
+}
+
+.btn-outline-secondary {
+    border-color: var(--color-secondary);
+    color: var(--color-secondary-darken);
+}
+
+.btn-secondary {
+    background-color: var(--color-secondary);
+    border-color: var(--color-secondary);
+
+    &.active.btn-default,
+    &.btn-toggle-checkbox.active {
+        border-color: var(--color-secondary);
+        background-color: var(--color-secondary-darken);
+    }
+
+    &:not(:disabled):not(.disabled):hover,
+    &:not(:disabled):not(.disabled):active {
+        background-color: var(--color-secondary-darken);
+        border-color: var(--color-secondary-darken);
+    }
+}
+
+.btn-outline-tertiary {
+    border-color: var(--color-tertiary);
+    color: var(--color-tertiary-darken);
+}
+
+.btn-tertiary {
+    background-color: var(--color-tertiary);
+    border-color: var(--color-tertiary);
+
+    &.active,
+    &.btn-toggle-checkbox.active {
+        border-color: var(--color-tertiary);
+        background-color: var(--color-tertiary-darken);
+    }
+
+    &:not(:disabled):not(.disabled):hover,
+    &:not(:disabled):not(.disabled):active {
+        background-color: var(--color-tertiary-darken);
+        border-color: var(--color-tertiary-darken);
+    }
+}
+
+.btn-outline-quaternary {
+    border-color: var(--color-quaternary);
+    color: var(--color-quaternary);
+}
+
+.btn-quaternary {
+    background-color: var(--color-quaternary);
+    border-color: var(--color-quaternary);
+
+    &.active,
+    &.btn-toggle-checkbox.active {
+        border-color: var(--color-quaternary);
+        background-color: var(--color-quaternary-darken);
+    }
+
+    &:not(:disabled):not(.disabled):hover,
+    &:not(:disabled):not(.disabled):active {
+        background-color: var(--color-quaternary-darken);
+        border-color: var(--color-quaternary-darken);
+    }
+}
+
+.btn-outline-success {
+    border-color: var(--color-success);
+    color: var(--color-success-darken);
+}
+
+.btn-success {
+    background-color: var(--color-success);
+    border-color: var(--color-success);
+
+    &.active,
+    &.btn-toggle-checkbox.active {
+        border-color: var(--color-success);
+        background-color: var(--color-success-darken);
+    }
+
+    &:not(:disabled):not(.disabled):hover,
+    &:not(:disabled):not(.disabled):active {
+        background-color: var(--color-success-darken);
+        border-color: var(--color-success-darken);
+    }
+}
+
+.btn-outline-danger {
+    border-color: var(--color-error);
+    color: var(--color-error-darken);
+}
+
+.btn-danger,
+.btn-error {
+    background-color: var(--color-error);
+    border-color: var(--color-error);
+
+    &.active,
+    &.btn-toggle-checkbox.active {
+        border-color: var(--color-error);
+        background-color: var(--color-error-error);
+    }
+
+    &:not(:disabled):not(.disabled):hover,
+    &:not(:disabled):not(.disabled):active {
+        background-color: var(--color-error-darken);
+        border-color: var(--color-error-darken);
+    }
+}
+
+.btn-outline-warning {
+    border-color: var(--color-warning);
+    color: var(--color-warning-darken);
+}
+
+.btn-warning {
+    background-color: var(--color-warning);
+    border-color: var(--color-warning);
+
+    &.active,
+    &.btn-toggle-checkbox.active {
+        border-color: var(--color-warning);
+        background-color: var(--color-warning-darken);
+    }
+
+    &:not(:disabled):not(.disabled):hover,
+    &:not(:disabled):not(.disabled):active {
+        background-color: var(--color-warning-darken);
+        border-color: var(--color-warning-darken);
+    }
+}
+
+.btn-outline-info {
+    border-color: var(--color-info);
+    color: var(--color-info-darken);
+}
+
+.btn-info {
+    background-color: var(--color-info);
+    border-color: var(--color-info);
+
+    &.active,
+    &.active.btn-toggle-checkbox {
+        border-color: var(--color-info);
+        background-color: var(--color-info-darken);
+    }
+
+    &:not(:disabled):not(.disabled):hover,
+    &:not(:disabled):not(.disabled):active {
+        background-color: var(--color-info-darken);
+        border-color: var(--color-info-darken);
+    }
+}
+
+.btn-outline-light {
+    border-color: var(--color-light);
+    color: var(--color-text);
+}
+
+.btn-light {
+    background-color: var(--color-light);
+    border-color: var(--color-light);
+
+    &.active,
+    &.btn-toggle-checkbox.active {
+        border-color: var(--color-light);
+        background-color: var(--color-light-darken);
+    }
+
+    &:not(:disabled):not(.disabled):hover,
+    &:not(:disabled):not(.disabled):active {
+        background-color: var(--color-light-darken);
+        border-color: var(--color-light-darken);
+    }
+}
+
+.btn-outline-dark {
+    border-color: var(--color-dark);
+    color: var(--color-dark);
+}
+
+.btn-dark {
+    background-color: var(--color-dark);
+    border-color: var(--color-dark);
+
+    &.active,
+    &.btn-toggle-checkbox.active {
+        border-color: var(--color-dark);
+        background-color: var(--color-dark-darken);
+    }
+
+    &:not(:disabled):not(.disabled):hover,
+    &:not(:disabled):not(.disabled):active {
+        background-color: var(--color-dark-darken);
+        border-color: var(--color-dark-darken);
+    }
+}
+
+.btn.active + .btn.active {
+    border-left: 1px solid var(--color-border);
+}
+
+.note-btn {
+    @extend .btn-default;
+}
+
+.dark-theme {
+    .btn {
+        color: var(--color-text-darken);
+    }
+}
+
+li.paginate_button.next,
+li.paginate_button.previous {
+    & > a {
+        background-color: transparent !important;
+    }
+}
+
+.btn-bordered {
+    border: thin solid var(--color-border) !important;
+}
+
+.btns-bordered {
+    .btn {
+        border: thin solid var(--color-border) !important;
+    }
+}
+
+.dataTables_wrapper .dataTables_paginate .paginate_button.current,
+.dataTables_wrapper .dataTables_paginate .paginate_button.current:hover {
+    @extend .btn;
+    @extend .btn-primary;
+    color: var(--color-text-light) !important;
+    //border: thin solid var(--color-border);
+    border-radius: 0;
+    vertical-align: baseline;
+    font-size: 1rem;
+}
+
+.note-btn.btn-light {
+    @extend .btn-default
+}
+
+.panel-heading.note-toolbar {
+    .btn {
+        @extend .btn-default;
+    }
+}

@@ -1,0 +1,13 @@
+/* Breadcrumb */
+
+.breadcrumb {
+    background-color: transparent !important;
+
+    &-container{
+        margin-left: -5px;
+    }
+    
+    & li {
+        @extend .breadcrumb-item;
+    }
+}

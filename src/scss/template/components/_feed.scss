@@ -1,0 +1,56 @@
+
+.feed-activity-list .feed-element {
+    border-bottom: 1px solid var(--color-border);
+}
+
+.feed-element:first-child {
+    margin-top: 0;
+}
+
+.feed-element {
+    padding-bottom: 15px;
+}
+
+.feed-element, .feed-element .media {
+    margin-top: 15px;
+}
+
+.feed-element, .media-body {
+    overflow: hidden;
+}
+
+.feed-element > a img {
+    margin-right: 10px;
+}
+
+.feed-element img.rounded-circle, .dropdown-messages-box img.rounded-circle {
+    width: 38px;
+    height: 38px;
+}
+
+.feed-element .well,
+.well {
+    border: 1px solid var(--color-border);
+    background-color: var(--color-secondary-foreground);
+    //border-top-width: 0;
+    box-shadow: none;
+    //margin-top: 10px;
+    margin-bottom: 5px;
+    padding: 0px 20px;
+    font-size: 11px;
+    line-height: 16px;
+    border-bottom-right-radius: $c-border-radius;
+    border-bottom-left-radius: $c-border-radius;
+    & br {
+        //height: 0.5rem !important;
+        display: none;
+    }
+}
+
+.feed-element .actions {
+    margin-top: 10px;
+}
+
+.feed-element .photos {
+    margin: 10px 0;
+}

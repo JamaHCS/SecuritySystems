@@ -1,0 +1,15 @@
+/* Code block highlighter */
+
+.code {
+    margin: 1rem 2rem 0 2rem;
+    background-color: var(--color-main-background) !important;
+
+    & pre {
+        margin-bottom: 0 !important;
+
+    }
+}
+
+.hljs {
+    background-color: var(--color-main-background);
+}

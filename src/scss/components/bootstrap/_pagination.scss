@@ -1,0 +1,17 @@
+.pagination {
+    & .page-item {
+        & a {
+            color: var(--color-text);
+            background-color: var(--color-secondary-foreground);
+            border-color: var(--color-border);
+        }
+
+        &.disabled a{
+            color: var(--color-text);
+            pointer-events: none;
+            cursor: auto;
+            background-color: var(--color-secondary-foreground);
+            border-color: var(--color-border);
+        }
+    }
+}

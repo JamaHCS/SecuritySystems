@@ -1,0 +1,35 @@
+
+.modal-header {
+    display: grid;
+    grid-template-columns: 9fr 1fr;
+    grid-template-areas: 'title close';
+    //flex-direction: row-reverse;
+    padding: 1rem 28px;
+    border-bottom: 1px solid var(--color-border);
+
+    & .modal-title {
+        line-height: 1.5 !important;
+        font-weight: 500 !important;
+        grid-area: title;
+    }
+
+    & .close {
+        grid-area: close;
+    }
+}
+
+.modal-footer {
+    border-top: 1px solid var(--color-border);
+}
+
+.modal-body {
+    padding: 0 1rem;
+}
+
+button.close {
+    color: var(--color-text);
+
+    &:hover {
+        color: var(--color-text-darken);
+    }
+}

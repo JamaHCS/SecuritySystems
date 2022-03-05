@@ -1,0 +1,174 @@
+@import './lib/variables';
+@import "components/cooper/box";
+@import './fonts';
+@import "./../../node_modules/bootstrap/scss/functions";
+@import "./../../node_modules/bootstrap/scss/mixins";
+@import './lib/bootstrap/variables';
+@import "./lib/bootstrap/glyphicon";
+@import "./../../node_modules/bootstrap/scss/root";
+@import "./../../node_modules/bootstrap/scss/reboot";
+@import "./../../node_modules/bootstrap/scss/type";
+@import "./../../node_modules/bootstrap/scss/grid";
+@import "./../../node_modules/bootstrap/scss/forms";
+@import "./../../node_modules/bootstrap/scss/buttons";
+@import './base';
+@import 'components/bootstrap/button';
+@import "components/bootstrap/form";
+//@import "lib/utilities/utilities";
+
+.c-login {
+    overflow: hidden;
+    background-color: var(--nav-bg) !important;
+    
+    & .ibox-content > .row {
+        width: 100%;
+        margin: 0;
+    }
+    & .c-title-span {
+        margin-left: -20px;
+        color: var(--color-quaternary-lighten);
+        text-shadow: 0px 0px 9px var(--color-dz-shadow-t);
+    }
+
+    & > .particles-container {
+        height: 100vh;
+        width: 100vw;
+        //background: red;
+        //opacity: 0.5;
+        position: absolute;
+
+        #particles-js canvas {
+            display: block;
+            vertical-align: bottom;
+            -webkit-transform: scale(1);
+            -ms-transform: scale(1);
+            transform: scale(1);
+            opacity: 1;
+            -webkit-transition: opacity .8s ease, -webkit-transform 1.4s ease;
+            transition: opacity .8s ease, transform 1.4s ease
+        }
+
+        #particles-js {
+            width: 100%;
+            height: 100%;
+            position: fixed;
+            z-index: -10;
+            top: 0;
+            left: 0
+        }
+    }
+
+    //background: var(--nav-bg);
+    //background: -moz-linear-gradient(-45deg,  var(--color-primary-darken) 0%, var(--nav-bg) 100%);
+    //background: -webkit-linear-gradient(-45deg,  var(--color-primary-darken) 0%,var(--nav-bg) 100%);
+    //background: -o-linear-gradient(-45deg,  var(--color-primary-darken) 0%,var(--nav-bg) 100%);
+    //background: -ms-linear-gradient(-45deg,  var(--color-primary-darken) 0%,var(--nav-bg) 100%);
+    //background: linear-gradient(135deg,  var(--color-info) 0%,var(--nav-bg) 40%);
+    //filter: progid:DXImageTransform.Microsoft.gradient( startColorstr=var(--color-primary-darken), endColorstr=var(--nav-bg),GradientType=1 );
+
+
+    & header {
+        display: flex;
+        justify-content: flex-end;
+        vertical-align: top;
+    }
+
+    & .half {
+        height: 47vh;
+        width: 100vw;
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        background-color: var(--color-main-background);
+    }
+
+    .foreground {
+        background-color: transparent;
+        position: absolute;
+        top: 0;
+        left: 0;
+        height: 100vh;
+        width: 100vw;
+        z-index: 10;
+        display: flex;
+        //display: none;
+        justify-content: center;
+        align-items: center;
+    }
+
+    & form {
+        & .form-group {
+            margin-bottom: 1rem;
+        }
+    }
+
+    & .ibox {
+        width: 57vw;
+        box-shadow: 0px 0px 25px 5px var(--color-box-shadow-t);
+
+        & .ilabel {
+            & .text {
+                top: 2px;
+                position: relative;
+                margin-left: 4px;
+            }
+        }
+    }
+
+    & .forget-link {
+        font-size: 64px;
+    }
+
+    & .col-sm-6:nth-child(2) {
+        //position: relative;
+        //height: 100%;
+        //width: 100%;
+        //background-color: red;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+
+        & p, h4 {
+            align-self: flex-start;
+            justify-self: flex-start;
+        }
+
+        & a {
+            color: var(--color-primary) !important;
+        }
+    }
+}
+
+.c-title-span {
+    font-size: 10vw;
+    //font-size: 100%;
+    font-family: 'Poppins', "work sans", "Open Sans", sans-serif !important;
+    //font-face: var(--fh-1) ;
+    //margin-right: 2rem;
+    font-weight: 700;
+    //color: var(--color-quaternary);
+    //text-shadow: 0px 0px 9px rgba(0, 0, 0, 0.5);
+}
+
+@media (max-width: 992px) {
+    .c-login .ibox {
+        width: 80%;
+    }
+}
+
+@media(max-width: 768px) {
+    .col-md-6:nth-child(1) {
+        margin-bottom: 1rem;
+        padding-bottom: 1rem;
+        border-bottom: 1px dashed var(--color-border);
+    }
+    .c-login .c-title-span {
+        font-size: 10rem;
+        margin: 0;
+    }
+    .b-r {
+        border-right-color: transparent !important;
+        //border-bottom-color: var(--color-border) !important;
+    }
+}

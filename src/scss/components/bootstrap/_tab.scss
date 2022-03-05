@@ -1,0 +1,100 @@
+.tabs {
+    border-radius: $c-border-radius;
+
+    & .card-header-tabs {
+        //margin-right: -0.625rem;
+        margin-bottom: -0.75rem;
+        //margin-left: -0.625rem;
+        border-bottom: 0;
+    }
+
+    & .card-header-pills,
+    & .card-header-tabs {
+        margin-right: -.625rem;
+        margin-left: -.625rem;
+    }
+
+    & .nav > li {
+        width: auto;
+    }
+}
+
+.tabs-container, .tabs {
+    & .nav-tabs {
+        & li.active {
+            border: unset;
+            background-color: unset;
+
+            & > a {
+                color: var(--link-nav);
+                background-color: unset;
+                border: unset;
+            }
+        }
+
+        & li a {
+            color: var(--link-nav);
+        }
+
+        & li a.active,
+        & li.active a {
+            background-color: var(--color-light-lightest) !important;
+            border-top-right-radius: $c-border-radius;
+            color: var(--color-dark) !important;
+            border: thin var(--color-border) solid;
+            border-left: 4px var(--color-primary) solid;
+            border-bottom-width: 0;
+        }
+    }
+
+    & .tab-content {
+        border: thin solid var(--color-border);
+        //border-top-width: 0;
+    }
+}
+
+.nav.nav-tabs {
+    border-bottom: var(--color-border);
+}
+
+.tabs-container > .nav.nav-tabs {
+    border-bottom: 1px solid var(--color-border);
+}
+
+.dark-theme {
+
+    .tabs-container, .tabs {
+        & .nav-tabs {
+            //& li.active {
+            //    border: unset;
+            //    background-color: unset;
+            //
+            //    & > a {
+            //        color: var(--link-nav);
+            //        background-color: unset;
+            //        border: unset;
+            //    }
+            //}
+            //
+            //& li a {
+            //    color: var(--link-nav);
+            //}
+
+            & li a.active,
+            & li.active a {
+                background-color: rgba($dt-color-light, 0.5) !important;
+                border-top-right-radius: $c-border-radius;
+                color: var(--color-text-darken) !important;
+                border: thin var(--color-border) solid;
+                border-left: 4px var(--color-primary-lighten) solid;
+                border-bottom-width: 0;
+            }
+        }
+
+        //
+        //& .tab-content {
+        //    border: thin solid var(--color-border);
+        //    border-top-width: 0;
+        //}
+    }
+}

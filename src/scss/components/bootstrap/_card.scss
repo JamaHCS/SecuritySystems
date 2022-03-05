@@ -1,0 +1,25 @@
+.card {
+    border-radius: $c-border-radius;
+    border-color: var(--color-border);
+    border-bottom: 1px solid var(--color-border);
+    background-color: var(--color-main-background);
+    color: var(--color-text);
+
+    & .card-header {
+        border-color: var(--color-border);
+
+        &:first-child {
+            border-radius: $c-border-radius $c-border-radius 0 0;
+        }
+    }
+
+    & .card-footer {
+        &:last-child {
+            border-radius: 0 0 $c-border-radius $c-border-radius;
+        }
+
+        //background-color: rgba(38, 38, 38, 0.03);
+        padding: 9px 16px;
+        border-top: 1px solid var(--color-border);
+    }
+}

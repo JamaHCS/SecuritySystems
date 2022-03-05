@@ -1,0 +1,30 @@
+/*
+    5.8.0
+ */
+
+
+.fc-col-header-cell-cushion {
+    color: var(--color-primary) !important;
+}
+
+.fc-button{
+    @extend .btn
+}
+
+.fc-button-primary{
+    @extend .btn-primary
+}
+.fc-daygrid-day-number{
+    color: var(--color-primary);
+}
+
+.fc-day-today{
+    background-color: var(--color-light) !important;
+}
+
+.fc-view-container th,
+.fc-view-container td,
+.fc-view-container * {
+    //display: flex;
+    //border: 4px blue solid !important;
+}

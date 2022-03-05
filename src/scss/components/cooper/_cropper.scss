@@ -1,0 +1,75 @@
+/*
+    Cropper 1.5.12
+ */
+
+
+.cropper {
+    input[type="file"] {
+        display: none;
+    }
+
+    .header {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 10px 0 5px 0;
+
+        & h2 {
+            margin: 0;
+        }
+        & a {
+            text-decoration: none;
+            color: black;
+        }
+    }
+
+    .content {
+        display: flex;
+        justify-content: space-between;
+    }
+    .cropper-area {
+        width: auto !important;
+    }
+    .cropped-image img {
+        max-width: 100%;
+    }
+    .crop-placeholder {
+        width: 100%;
+        height: 200px;
+        background: var(--color-text-muted);
+    }
+
+    .actions {
+        margin-top: 1rem;
+        display: flex;
+        padding: 1rem 0;
+        flex-direction: row;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: space-around;
+    }
+
+    textarea {
+        width: 100%;
+        height: 100px;
+    }
+
+    .preview {
+        width: 100%;
+        height: calc(372px * (9 / 16));
+        overflow: hidden;
+
+        &-area {
+            width: 307px;
+            
+            p {
+                font-size: 1.25rem;
+                margin: 0;
+                margin-bottom: 1rem;
+            }
+            p:last-of-type {
+                margin-top: 1rem;
+            }
+        }
+    }
+}

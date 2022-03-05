@@ -1,0 +1,198 @@
+.label {
+    @extend .badge;
+}
+
+.badge,
+.label {
+    border-radius: $c-border-radius;
+    padding: 0.25rem 0.4rem;
+    font-size: 80%;
+    font-family: var(--ft-1);
+    font-weight: 600;
+    line-height: 1;
+
+    &#total_notification {
+        padding: 0.1rem 0.2rem;
+    }
+
+    &-primary {
+        background-color: var(--color-primary-lighten-t) !important;
+        color: var(--color-primary-darken) !important;
+        border: 1px var(--color-primary-lighten-t) solid !important;
+        transition: $c-transition-time;
+    }
+
+    &-secondary {
+        background-color: var(--color-secondary-lighten-t) !important;
+        color: var(--color-secondary-darken) !important;
+        border: 1px var(--color-secondary-lighten-t) solid !important;
+        transition: $c-transition-time;
+    }
+
+    &-quaternary {
+        background-color: var(--color-quaternary-lighten-t) !important;
+        color: var(--color-quaternary-darken) !important;
+        border: 1px var(--color-quaternary-lighten-t) solid !important;
+        transition: $c-transition-time;
+    }
+
+    &-success {
+        background-color: var(--color-success-lighten-t) !important;
+        color: var(--color-success-darken) !important;
+        border: 1px var(--color-success-lighten-t) solid !important;
+        transition: $c-transition-time;
+    }
+
+    &-warning {
+        background-color: var(--color-warning-lighten-t) !important;
+        color: var(--color-warning-darken) !important;
+        border: 1px var(--color-warning-lighten-t) solid !important;
+        transition: $c-transition-time;
+    }
+
+    &-error,
+    &-danger {
+        background-color: var(--color-error-lighten-t) !important;
+        color: var(--color-error-darken) !important;
+        border: 1px var(--color-error-lighten-t) solid !important;
+        transition: $c-transition-time;
+    }
+
+    &-info {
+        background-color: var(--color-info-lighten-t) !important;
+        color: var(--color-info-darken) !important;
+        border: 1px var(--color-info-lighten-t) solid !important;
+        transition: $c-transition-time;
+    }
+
+    &.bg-info {
+        @extend .badge-info;
+    }
+
+    &-dark {
+        background-color: var(--color-dark-lighten-t) !important;
+        color: var(--color-dark) !important;
+        border: 1px var(--color-dark-lighten-t) solid !important;
+        transition: $c-transition-time;
+    }
+
+    &-light {
+        background-color: var(--color-light-lighten-t) !important;
+        color: var(--color-light-darkest) !important;
+        border: 1px var(--color-light-lighten-t) solid !important;
+        transition: $c-transition-time;
+    }
+
+    &.h1, &.h2, &.h3, &.h4, &.h5, &.h6, & h1, & h2, & h3, & h4, & h5, & h6 {
+        font-family: "work sans", sans-serif !important;
+    }
+
+    &-lg {
+        height: 30px;
+        font-size: 0.9rem;
+        vertical-align: middle;
+        display: inline-flex;
+        justify-content: center;
+        align-items: center;
+    }
+}
+
+.btn {
+    &.badge,
+    &.label {
+        &-primary {
+            &:hover,
+            &:active,
+            &:focus {
+                color: var(--color-primary-darken);
+                background-color: var(--color-primary-lighten) !important;
+                text-shadow: 0px 0px 14px var(--color-primary-darken) !important;
+                border: 1px var(--color-primary-lighten-t) solid !important;
+            }
+        }
+
+        &-secondary {
+            &:hover,
+            &:active,
+            &:focus {
+                color: var(--color-secondary-darken);
+                background-color: var(--color-secondary-lighten) !important;
+                text-shadow: 0px 0px 14px var(--color-seconday-darken) !important;
+                border: 1px var(--color-seconday-lighten-t) solid !important;
+            }
+        }
+
+        &-quaternary {
+            &:hover,
+            &:active,
+            &:focus {
+                color: var(--color-quaternary-darken) !important;
+                background-color: var(--color-quaternary-lighten) !important;
+                text-shadow: 0px 0px 14px var(--color-quaternary-darken) !important;
+                border: 1px var(--color-quaternary-lighten-t) solid !important;
+            }
+        }
+
+        &-success {
+            &:hover,
+            &:active,
+            &:focus {
+                color: var(--color-success-darken) !important;
+                background-color: var(--color-success-lighten) !important;
+                text-shadow: 0px 0px 15px var(--color-success-darken) !important;
+                border: 1px var(--color-success-lighten-t) solid !important;
+            }
+        }
+
+        &-error {
+            &:hover,
+            &:active,
+            &:focus {
+                color: var(--color-error-darken) !important;
+                background-color: var(--color-error-lighten) !important;
+                text-shadow: 0px 0px 14px var(--color-error-darken) !important;
+                border: 1px var(--color-error-lighten-t) solid !important;
+            }
+        }
+
+        &-warning {
+            &:hover,
+            &:active,
+            &:focus {
+                color: var(--color-warning-darken) !important;
+                background-color: var(--color-warning-lighten) !important;
+                text-shadow: 0px 0px 14px var(--color-warning-darken) !important;
+                border: 1px var(--color-warning-lighten-t) solid !important;
+            }
+        }
+
+        &-info {
+            &:hover,
+            &:active,
+            &:focus {
+                color: var(--color-info-darken) !important;
+                background-color: var(--color-info-lighten) !important;
+                text-shadow: 0px 0px 14px var(--color-info-darken) !important;
+                border: 1px var(--color-info-lighten-t) solid !important;
+            }
+        }
+
+        &-dark {
+            &:hover,
+            &:active,
+            &:focus {
+                color: var(--color-dark-darken) !important;
+                background-color: var(--color-dark-lighten) !important;
+                text-shadow: 0px 0px 14px var(--color-dark-darken) !important;
+                border: 1px var(--color-dark-lighten-t) solid !important;
+            }
+        }
+    }
+}
+
+td {
+    & .badge,
+    & .label {
+        width: 90%;
+    }
+}

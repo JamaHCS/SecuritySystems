@@ -1,0 +1,51 @@
+.modal-backdrop {
+    z-index: 2000 !important;
+}
+
+.modal {
+    z-index: 2010 !important;
+}
+
+.flatpickr-calendar {
+    z-index: 500;
+}
+
+.navbar-static-top {
+    z-index: 700;
+}
+
+.navbar-static-side {
+    z-index: 601 !important;
+}
+
+.body-small .navbar-static-side {
+    z-index: 601 !important;
+}
+
+#page-wrapper {
+    //z-index: 10;
+}
+
+.dropdown-menu {
+    z-index: 501 !important;
+}
+
+.nav.nav-second-level{
+    z-index: 51 !important;
+}
+
+.page-heading {
+    z-index: 600 !important;
+}
+
+.navbar-right .dropdown-menu {
+    z-index: 602 !important;
+}
+
+.different-currency-alert ~.btn.btn-success {
+    z-index: 500 !important;
+}
+
+.tooltip {
+    z-index: 5000 !important;
+}

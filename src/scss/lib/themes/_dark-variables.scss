@@ -1,0 +1,240 @@
+$dt-color-tritonix: $color-tritonix;
+
+$dt-color-box-shadow-base: $color-box-shadow-base;
+$dt-color-box-shadow-t: rgba($dt-color-box-shadow-base, 0.15);
+$dt-color-box-shadow-base-light: #fff;
+$dt-color-box-shadow-light-t: rgba($dt-color-box-shadow-base-light, 0.85);
+
+$dt-color-dz-shadow-base: $color-dz-shadow-base;
+$dt-color-dz-shadow-t: rgba($color-dz-shadow-t, 0.3);
+$dt-color-dz-shadow-t-2: rgba($color-dz-shadow-t, 0.1);
+
+$dt-scroll-1: darken($scroll-1, 65%);
+$dt-scroll-2: darken($scroll-2, 65%);
+$dt-scroll-3: darken($scroll-3, 65%);
+$dt-scroll-4: darken($scroll-4, 65%);
+$dt-scroll-5: darken($scroll-5, 65%);
+
+// Various colors
+$dt-white: $white;
+$dt-black-base: $black;
+$dt-black: $dt-black-base;
+$dt-black-t: rgba($black-t, 0.5);
+$dt-black-2-t: rgba($black-t, 0.8);
+$dt-text-color: $text-color; // Body text
+$dt-gray: $gray; // Background wrapper color
+$dt-light-gray: $light-gray; // Default label, badge
+$dt-label-badge-color: $label-badge-color;
+$dt-light-blue: $light-blue;
+$dt-color-caret: $color-caret;
+
+$dt-color-secondary-foreground: lighten(#181F25, 2%);
+$dt-color-secondary-foreground-darken: lighten($dt-color-secondary-foreground, 10%);
+$dt-color-tertiary-foreground: lighten($dt-color-secondary-foreground, 5%);
+$dt-color-tertiary-foreground-darken: lighten($dt-color-secondary-foreground, 25%);
+$dt-color-main-background: #13191E;
+//$dt-color-main-background: #171F24;
+$dt-color-secondary-background: invert($dt-color-secondary-foreground);
+
+// datatable colors
+$dt-color-th: darken($dt-color-secondary-foreground, 4.5%);
+$dt-color-tr-1: invert($color-tr-1);
+$dt-color-tr-1-darken: lighten($dt-color-tr-1, 3%);
+$dt-color-tr-2: darken($dt-color-secondary-foreground, 2%);
+$dt-color-tr-2-darken: darken($dt-color-tr-2, 1.5%);
+$dt-color-tr-3: invert($color-tr-3);
+$dt-color-tr-4: invert($color-tr-4);
+$dt-color-tr-5: invert($color-tr-5);
+$dt-color-tr-6: darken($dt-color-secondary-foreground, 4%);
+$dt-color-tr-7: invert($color-tr-7);
+$dt-color-tr-8: darken($dt-color-secondary-foreground, 5%);
+$dt-color-tr-9: invert($color-tr-9);
+$dt-color-tr-10: invert($color-tr-10);
+$dt-color-tr-11: invert($color-tr-11);
+$dt-color-tr-12: invert($color-tr-12);
+$dt-color-tr-13: invert($color-tr-13);
+$dt-color-tr-14: invert($color-tr-14);
+$dt-color-tr-15: invert($color-tr-15);
+$dt-color-tr-16: invert($color-tr-16);
+$dt-color-tr-17: invert($color-tr-17);
+$dt-color-tr-18: darken($dt-color-secondary-foreground, 6.5%);
+$dt-color-tr-19: invert($color-tr-19);
+$dt-color-tr-20: invert($color-tr-20);
+$dt-color-tr-21: invert($color-tr-21);
+$dt-color-tr-22: invert($color-tr-22);
+$dt-color-tr-23: invert($color-tr-23);
+$dt-color-tr-24: invert($color-tr-24);
+$dt-color-tr-24-darken: darken($dt-color-tr-24, 3%);
+$dt-color-tr-25: invert($color-tr-25);
+$dt-color-tr-25-darken: darken($dt-color-tr-25, 3%);
+$dt-color-tr-26: $dt-color-secondary-foreground;
+$dt-color-tr-26-darken: darken($dt-color-tr-26, 3%);
+
+$dt-primary-base: desaturate($color-primary, 16%);
+$dt-color-primary: lighten($dt-primary-base, 3%);
+$dt-color-primary-desaturated: desaturate($dt-color-primary, $c-desaturated-base-unit);
+$dt-color-primary-t: $dt-color-primary + '88';
+$dt-color-primary-lighten: darken($dt-color-primary, 12%);
+$dt-color-primary-lighten-t: rgba($dt-color-primary-lighten, 0.65);
+$dt-color-primary-darken: lighten($dt-color-primary, 25%);
+$dt-color-primary-darkest: lighten($dt-color-primary, 30%);
+
+$dt-color-secondary-base: desaturate($color-secondary, 20%);
+$dt-color-secondary: $dt-color-secondary-base;
+$dt-color-secondary-desaturated: desaturate($dt-color-secondary, $c-desaturated-base-unit);
+$dt-color-secondary-t: $dt-color-secondary + '88';
+$dt-color-secondary-lighten: darken($dt-color-secondary, 9%);
+$dt-color-secondary-lighten-t: rgba($dt-color-secondary-lighten, 0.65);
+$dt-color-secondary-darken: lighten($dt-color-secondary, 25%);
+$dt-color-secondary-darkest: lighten($dt-color-secondary, 11%);
+
+$dt-color-tertiary-base: desaturate($color-tertiary, 16%);
+$dt-color-tertiary: $dt-color-tertiary-base;
+$dt-color-tertiary-desaturated: desaturate($dt-color-tertiary, $c-desaturated-base-unit);
+$dt-color-tertiary-t: rgba($dt-color-tertiary, 0.5);
+$dt-color-tertiary-lighten: darken($dt-color-tertiary, 9%);
+$dt-color-tertiary-lighten-t: rgba($dt-color-tertiary-lighten, 0.65);
+$dt-color-tertiary-darken: lighten($dt-color-tertiary, 25%);
+$dt-color-tertiary-darkest: lighten($dt-color-tertiary-darken, 7%);
+
+// #2F4057
+$dt-color-quaternary-base: darken($color-quaternary, 10%);
+$dt-color-quaternary: $dt-color-quaternary-base;
+$dt-color-quaternary-desaturated: desaturate($dt-color-quaternary, $c-desaturated-base-unit);
+$dt-color-quaternary-t: rgba($dt-color-quaternary, 0.5);
+$dt-color-quaternary-lighten: darken($dt-color-quaternary, 10%);
+$dt-color-quaternary-lighten-t: rgba($dt-color-quaternary, 0.65);
+$dt-color-quaternary-lightest: darken($dt-color-quaternary, 15%);
+$dt-color-quaternary-darken: lighten($dt-color-quaternary, 5%);
+
+$dt-color-white-base: invert( $color-white );
+$dt-color-white: desaturate($dt-color-white-base, 50%);
+$dt-color-white-desaturated: desaturate($dt-color-white, $c-desaturated-base-unit);
+$dt-color-white-t: rgba($dt-color-white, 0.5);
+$dt-color-white-lighten: darken($dt-color-white, 10%);
+$dt-color-white-lighten-t: darken($dt-color-white, 30%);
+$dt-color-white-lightest: darken($dt-color-white, 15%);
+$dt-color-white-darken: lighten($dt-color-white, 5%);
+
+$dt-color-alice-base: desaturate($color-alice, 50%);
+$dt-color-alice: $dt-color-alice-base;
+$dt-color-alice-desaturated: desaturate($dt-color-alice, $c-desaturated-base-unit);
+$dt-color-alice-t: rgba($dt-color-alice, 0.5);
+$dt-color-alice-lighten: darken($dt-color-alice, 10%);
+$dt-color-alice-lighten-t: rgba($dt-color-alice, 0.7);
+$dt-color-alice-lightest: darken($dt-color-alice, 15%);
+$dt-color-alice-darken: lighten($dt-color-alice, 20%);
+
+$dt-color-success-base: desaturate($color-success, 20%);
+$dt-color-success: $dt-color-success-base;
+$dt-color-success-desaturated: desaturate($dt-color-success, $c-desaturated-base-unit);
+$dt-color-success-t: $dt-color-success + '88';
+$dt-color-success-lighten: darken($dt-color-success, 15%);
+$dt-color-success-lighten-t: rgba($dt-color-success-lighten, 0.75);
+$dt-color-success-darken: lighten($dt-color-success, 25%);
+
+$dt-color-error-base: desaturate($color-error, 10%);
+$dt-color-error: $dt-color-error-base;
+$dt-color-error-desaturated: desaturate($dt-color-error, $c-desaturated-base-unit);
+$dt-color-error-t: $dt-color-error + '88';
+$dt-color-error-lighten: lighten($dt-color-error, 9%);
+$dt-color-error-lighten-t: rgba($dt-color-error-lighten, 0.65);
+$dt-color-error-darken: lighten($dt-color-error, 25%);
+$dt-color-error-darkest: darken($dt-color-error, 7%);
+
+$dt-color-warning-base: desaturate($color-warning, 20%);
+$dt-color-warning: darken($dt-color-warning-base, 20%);
+$dt-color-warning-desaturated: desaturate($dt-color-warning, $c-desaturated-base-unit);
+$dt-color-warning-t: $dt-color-warning + '88';
+$dt-color-warning-lighten: darken($dt-color-warning, 20%);
+$dt-color-warning-lighten-t: rgba($dt-color-warning, 0.8);
+$dt-color-warning-darken: lighten($dt-color-warning, 20%);
+
+$dt-color-shadow-base: desaturate($color-shadow-base, 9%);
+//$dt-color-shadow: $dt-color-shadow-base;
+//$dt-color-shadow-desaturated: desaturate($dt-color-shadow, $c-desaturated-base-unit);
+//$dt-color-shadow-t: rgba($dt-color-shadow, 0.5);
+//$dt-color-shadow-lighten: darken($dt-color-shadow, 9%);
+//$dt-color-shadow-lighten-t: rgba($dt-color-shadow-lighten, 0.65);
+//$dt-color-shadow-lightest: darken($dt-color-shadow-lighten, 10%);
+//$dt-color-shadow-darken: lighten($dt-color-shadow, 25%);
+//$dt-color-shadow-darkest: lighten($dt-color-shadow, 10%);
+
+$dt-color-info-base: desaturate($color-info, 16%);
+$dt-color-info: $dt-color-info-base;
+$dt-color-info-desaturated: desaturate($dt-color-info, $c-desaturated-base-unit);
+$dt-color-info-t: $dt-color-info + '88';
+$dt-color-info-lighten: lighten($dt-color-info, 12%);
+$dt-color-info-lighten-t: rgba($dt-color-info-lighten, 0.65);
+$dt-color-info-darken: lighten($dt-color-info, 25%);
+
+$dt-color-light-base: darken($color-light, 10%);
+$dt-color-light: desaturate($dt-color-light-base, 16%);
+$dt-color-light-desaturated: desaturate($dt-color-light, $c-desaturated-base-unit);
+$dt-color-light-lighten: darken($dt-color-light, 2.5%);
+$dt-color-light-lightest: darken($dt-color-light, 20%);
+$dt-color-light-darken: lighten($dt-color-light, 3%);
+$dt-color-light-darkest: lighten($dt-color-light, 11%);
+
+$dt-color-dark-base: desaturate($color-dark, 50%);
+$dt-color-dark: $dt-color-dark-base;
+$dt-color-dark-t: $dt-color-dark + '88';
+$dt-color-dark-format-bg: rgba($dt-color-dark, 0.15);
+$dt-color-dark-lighten: lighten($dt-color-dark, 30%);
+$dt-color-dark-lighten-t: lighten($dt-color-dark-lighten, 20%);
+
+$dt-code-container-bg: $dt-color-main-background;
+
+$dt-base-border: darken(#40464B, 0%);
+$dt-color-border: $dt-base-border;
+$dt-color-border-lighten: darken($dt-base-border, 1.5%);
+$dt-color-border-darken: lighten($dt-base-border, 1.5%);
+
+$dt-color-text-base: lighten($color-text, 41.5%);
+$dt-color-text: $dt-color-text-base;
+$dt-color-text-light: lighten($dt-white, 2%);
+$dt-color-text-t: $dt-text-color + '55';
+$dt-color-text-lighten: darken($dt-color-text, 30%);
+$dt-color-text-darken: lighten($dt-color-text, 10%);
+$dt-color-text-muted: invert($color-text-muted);
+$dt-color-muted-secondary: invert($color-muted-secondary);
+
+$dt-nav-bg: saturate($dt-color-quaternary-base, 10%);
+$dt-nav-bg-lightest-base: desaturate($dt-nav-bg, 23%);
+$dt-nav-bg-lightest: lighten($dt-nav-bg-lightest-base, 8%);
+$dt-nav-active: lighten($dt-nav-bg, 5%);
+$dt-nav-second-level: lighten($dt-nav-bg, 6%);
+$dt-nav-text-color: $nav-text-color;
+$dt-dark-border: $dark-border;
+
+$dt-link-nav-base: $link-nav;
+$dt-link-nav: $dt-link-nav-base;
+$dt-link-nav-darken: lighten($dt-link-nav, 12%);
+
+$dt-color-tittles: $dt-color-primary;
+
+$dt-color-1: $dt-white;
+$dt-color-2: $dt-black;
+$dt-color-3: $dt-color-shadow-base;
+$dt-color-4: $dt-color-error;
+$dt-color-5: $dt-color-primary;
+$dt-color-6: $color-6;
+$dt-color-7: $color-7;
+$dt-color-8: $dt-color-warning;
+$dt-color-9: $dt-color-secondary;
+
+$dt-navy: $dt-color-primary; // Primary color
+$dt-dark-gray: $dt-color-shadow-base; // Default color
+$dt-blue: $dt-color-primary; // Success color
+$dt-lazur: $dt-color-secondary; // Info color
+$dt-yellow: $dt-color-warning; // Warning color
+$dt-red: $dt-color-error; // Danger color
+
+$dt-spin-color: $dt-navy;
+
+$dt-border-color: invert($border-color); // IBox border
+$dt-ibox-title-bg: invert($ibox-title-bg); // IBox Background header
+$dt-ibox-content-bg: invert($ibox-content-bg); // IBox Background content
+
+$dt-text-muted: $dt-color-text-muted;
+

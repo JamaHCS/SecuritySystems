@@ -1,0 +1,131 @@
+/* Libraries */
+@import './.././lib/themes/theme';
+@import "./.././lib/themes/dark-theme";
+
+/* Fonts imports */
+@import './.././fonts';
+
+//@import "./.././../../node_modules/bootstrap/scss/variables"; 
+
+@import "./.././../../node_modules/bootstrap/scss/functions";
+@import "./.././../../node_modules/bootstrap/scss/mixins";
+
+@import './.././lib/bootstrap/variables';
+
+@import "./.././lib/bootstrap/glyphicon";
+
+@import "./.././../../node_modules/bootstrap/scss/root";
+@import "./.././../../node_modules/bootstrap/scss/reboot";
+@import "./.././../../node_modules/bootstrap/scss/type";
+@import "./.././../../node_modules/bootstrap/scss/images";
+@import "./.././../../node_modules/bootstrap/scss/code";
+@import "./.././../../node_modules/bootstrap/scss/grid";
+@import "./.././../../node_modules/bootstrap/scss/tables";
+@import "./.././../../node_modules/bootstrap/scss/forms";
+@import "./.././../../node_modules/bootstrap/scss/buttons";
+@import "./.././../../node_modules/bootstrap/scss/transitions";
+@import "./.././../../node_modules/bootstrap/scss/dropdown";
+@import "./.././../../node_modules/bootstrap/scss/button-group";
+@import "./.././../../node_modules/bootstrap/scss/input-group";
+@import "./.././../../node_modules/bootstrap/scss/custom-forms";
+@import "./.././../../node_modules/bootstrap/scss/nav";
+@import "./.././../../node_modules/bootstrap/scss/navbar";
+@import "./.././../../node_modules/bootstrap/scss/card";
+@import "./.././../../node_modules/bootstrap/scss/breadcrumb";
+@import "./.././../../node_modules/bootstrap/scss/pagination";
+@import "./.././../../node_modules/bootstrap/scss/badge";
+@import "./.././../../node_modules/bootstrap/scss/jumbotron";
+@import "./.././../../node_modules/bootstrap/scss/alert";
+@import "./.././../../node_modules/bootstrap/scss/progress";
+@import "./.././../../node_modules/bootstrap/scss/media";
+@import "./.././../../node_modules/bootstrap/scss/list-group";
+@import "./.././../../node_modules/bootstrap/scss/close";
+@import "./.././../../node_modules/bootstrap/scss/toasts";
+@import "./.././../../node_modules/bootstrap/scss/modal";
+@import "./.././../../node_modules/bootstrap/scss/tooltip";
+@import "./.././../../node_modules/bootstrap/scss/popover";
+@import "./.././../../node_modules/bootstrap/scss/carousel";
+@import "./.././../../node_modules/bootstrap/scss/spinners";
+@import "./.././../../node_modules/bootstrap/scss/utilities";
+@import "./.././../../node_modules/bootstrap/scss/print";
+
+@import './.././../../node_modules/bootstrap-vue/src/index.scss';
+@import './../../plugins/highlight/sass/_stackoverflow-light';
+
+/* Mixins */
+@import './.././mixins';
+
+/* Animations */
+@import './.././animations';
+
+@import "./../scot";
+@import "./../template/components/feed";
+
+/* Base */
+@import './.././base';
+
+/* Components */
+/* Bootstrap components */
+@import "./../components/bootstrap/alert";
+@import "./../components/bootstrap/badge";
+@import './../components/bootstrap/button';
+@import "./../components/bootstrap/card";
+@import "./../components/bootstrap/navbar";
+@import "./../components/bootstrap/images";
+@import "./../components/bootstrap/tab";
+@import "./../components/bootstrap/toast";
+@import "./../components/bootstrap/breadcrumb";
+@import "./../components/bootstrap/form";
+@import "./../components/bootstrap/input-group@3";
+@import "./../components/bootstrap/modal";
+@import "./../components/bootstrap/list-group";
+@import "./../components/bootstrap/docs";
+@import "./../components/bootstrap/pagination";
+
+/* Cooper */
+@import "./../components/cooper/code";
+@import "./../components/cooper/box";
+@import "./../components/cooper/aside";
+@import "./../components/cooper/navbar";
+@import "./../components/cooper/cropper";
+//@import "./../components/cooper/table";
+@import "./../components/cooper/c-table";
+//@import "./../components/cooper/dropzone";
+//@import "./../components/cooper/flatpicker";
+@import "./../components/cooper/fullCalendar";
+//@import "./../components/cooper/select2";
+//@import "./../components/cooper/summernote";
+//@import "./../components/sweetalert/sweetAlert";
+@import "./../components/cooper/tribute";
+@import "./../components/cooper/viewerjs";
+@import "./../components/cooper/pace";
+@import "./../components/cooper/metismenu";
+@import "./../components/cooper/onoffswitch";
+@import "./../components/cooper/spinner";
+@import "./../components/cooper/header";
+
+/* Z-index */
+@import "./../z-index";
+
+/* Utilities */
+@import "./../lib/utilities/utilities";
+
+/* Media query's */
+@import './.././media';
+
+// To dark theme
+// https://programadorwebvalencia.com/tema-oscuro-en-puro-sass/
+
+//Hyper theme
+//https://coderthemes.com/hyper/saas/tables-datatable.html
+
+//To fix the border bug...?
+//https://stackoverflow.com/questions/12547580/borders-disappear-in-chrome-when-i-zoom-in
+
+//Z-index issue navbar dropdowns
+//https://css-tricks.com/almanac/properties/z/z-index/
+
+//To table style...?
+//https://dev.to/dcodeyt/creating-beautiful-html-tables-with-css-428l
+
+  

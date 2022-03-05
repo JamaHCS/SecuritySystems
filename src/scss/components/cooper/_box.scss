@@ -1,0 +1,147 @@
+/* ibox */
+
+.ibox-content,
+.ibox-title,
+.ibox {
+    border: solid var(--color-border-lighten);
+    //-webkit-box-shadow: inset 20px 20px 4px -19px #ffffff, inset -20px -20px 4px -19px #000000 !important;
+    //box-shadow: inset 20px 20px 4px -19px #ffffff, inset -20px -20px 4px -19px #000000 !important;
+    //border: none;
+    //box-shadow: 0 0 35px 0 rgba(154, 161, 171, 0.15);
+}
+
+.ibox-content,
+.ibox-title {
+    box-shadow: 0 0 35px 0 var(--color-box-shadow-t);
+}
+
+.dark-theme {
+    .ibox-content,
+    .ibox-title {
+        box-shadow: 0 0 0 0 var(--color-box-shadow-t);
+    }
+}
+
+.ibox {
+    border-width: 0;
+    clear: both;
+    margin-bottom: 25px;
+    margin-top: 0;
+    padding: 0;
+
+    & h2 {
+        margin-top: 0.65rem !important;
+    }
+}
+
+.ibox-title {
+    border-top-width: thin;
+    border-left-width: thin;
+    border-right-width: thin;
+    //display: flex;
+
+    background-color: var(--color-secondary-foreground);
+    color: inherit;
+    margin-bottom: 0;
+    padding: 15px 15px 8px 15px;
+    min-height: 48px;
+    position: relative;
+    clear: both;
+    -webkit-border-radius: $c-border-radius $c-border-radius 0 0;
+    -moz-border-radius: $c-border-radius $c-border-radius 0 0;
+    border-radius: $c-border-radius $c-border-radius 0 0;
+
+    justify-content: center;
+    align-items: center;
+
+    border-bottom: thin solid var(--color-border-lighten) !important;
+
+    & .col-sm-6:nth-of-type(2) {
+        text-align: right;
+    }
+
+    & ~ .ibox-content {
+        border-top-left-radius: 0;
+        border-top-right-radius: 0;
+    }
+
+    & h5 {
+        display: inline-block;
+        font-size: 14px;
+        margin: 0 0 7px;
+        padding: 0;
+        text-overflow: ellipsis;
+        float: none;
+
+        font-weight: 600 !important;
+    }
+
+    & .pull-right {
+        position: static;
+    }
+}
+
+.ibox-content {
+    border-bottom-width: thin;
+    border-left-width: thin;
+    border-right-width: thin;
+    border-top-width: thin;
+    border-radius: $c-border-radius;
+
+    clear: both;
+    background-color: var(--color-secondary-foreground);
+    //background-color: red;
+    color: inherit;
+    padding: 15px 20px 20px 20px;
+}
+
+.ibox-tools {
+    display: inline-block;
+    //float: none;
+    margin-left: auto;
+    margin-top: 0;
+    position: relative;
+    //top: 15px;
+    //right: 15px;
+    top: 0;
+    right: 0;
+    padding: 0;
+    text-align: right;
+
+    & strong {
+        //@extend .c-number-format;
+        font-weight: 800;
+    }
+
+    & a {
+        cursor: pointer;
+        margin-left: 5px;
+
+        &:not(.btn) {
+            color: var(--color-text-muted) !important;
+        }
+    }
+
+    & a:hover {
+        color: var(--black);
+    }
+
+    & a.btn-primary {
+        color: var(--color-text-light) !important;
+    }
+
+    & .dropdown-menu > li > a {
+        padding: 4px 10px;
+        font-size: 12px;
+        color: var(--color-text) !important;
+    }
+
+    & .dropdown-toggle::after {
+        display: none;
+    }
+
+    &.open > .dropdown-menu {
+        left: auto;
+        right: 0;
+    }
+}

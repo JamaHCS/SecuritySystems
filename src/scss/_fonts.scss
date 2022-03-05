@@ -1,0 +1,65 @@
+/* Fonts */
+@import url("https://fonts.googleapis.com/css?family=Open+Sans:400");
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800;900&display=swap'); //600 400 800
+@import url("https://fonts.googleapis.com/css?family=Work+Sans:400,500,600,700,800,900"); //600 400 800
+@import url("https://fonts.googleapis.com/css?family=Inconsolata:400,600,");
+
+:root {
+    font-size: $c-font-size;
+
+    --fh-1: 'Poppins';
+    --ft-1: 'Work Sans';
+    --fc-1: 'Inconsolata';
+}
+
+body {
+    font-family: var(--ft-1), 'Open Sans', sans-serif !important;
+    font-face: var(--ft-1) !important;
+}
+
+h1, h2, h3, h4, h5, h6,
+.logo-element {
+    font-family: var(--fh-1), 'Open Sans', sans-serif !important;
+    font-face: var(--fh-1) !important;
+    //font-style: italic;
+    text-transform: uppercase !important;
+    line-height: 1;
+    //font-weight: 500 !important;
+
+    & strong {
+        font-weight: 600;
+    }
+}
+
+dt {
+    font-weight: 500 !important;
+}
+
+//a:not([class]),
+
+// c-number-format
+
+.c-number-format,
+.c-number-format::placeholder {
+    font-family: var(--fc-1), monospace !important;
+    color: var(--color-text-darken);
+    padding-left: 2px;
+    padding-right: 2px;
+    //background-color: var(--color-dark-format-bg);
+    transition: $c-transition-time;
+    font-size: 14px;
+    //color: red;
+}
+
+.active .c-number-format {
+    color: var(--color-text-light);
+}
+
+.text-light {
+    color: var(--color-text-light) !important;
+}
+
+.text-dark {
+    color: var(--color-text) !important;
+}

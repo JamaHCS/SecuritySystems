@@ -1,0 +1,28 @@
+.swal-icon--info {
+    border-color: var(--color-primary);
+
+    /* "i"-letter body */
+    &::before {
+        content: "";
+        position: absolute;
+        width: 5px;
+        height: 29px;
+        left: 50%;
+        bottom: 17px;
+        border-radius: $c-border-radius;
+        margin-left: -2px;
+        background-color: var(--color-primary);
+    }
+    /* "i"-letter dot */
+    &::after {
+        content: "";
+        position: absolute;
+        width: 7px;
+        height: 7px;
+        border-radius: 50%;
+        margin-left: -3px;
+        top: 19px;
+        background-color: var(--color-primary);
+        left: 50%;
+    }
+}
