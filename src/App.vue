@@ -29,7 +29,6 @@ export default {
         CNavbar,
         cAsidebar,
         Breadcrumb
-        
     },
     data() {
         return {
