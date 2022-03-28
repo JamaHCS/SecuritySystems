@@ -66,6 +66,18 @@ export default {
             try {
                 let res = await auth.login(this.email, this.password);
 
+                let tokenRaw = res.data.data.token;
+                let index = tokenRaw.indexOf('|');
+
+                const user = {
+                    email: this.email,
+                    password: this.password,
+                    name: res.data.data.name,
+                    token: tokenRaw.substring(index + 1)
+                };
+
+                auth.setUserLogged(user);
+
                 if (res.status >= 400) {
                     this.error = true;
                     this.$forceUpdate();
