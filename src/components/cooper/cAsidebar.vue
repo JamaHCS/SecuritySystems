@@ -26,7 +26,7 @@
                 </li>
                 
                 <li :class="($route.name === 'form' || $route.name === 'formSimulation') ? 'active' : ''">
-                    <router-link :to="{name: 'form'}">
+                    <router-link :to="{name: 'login'}">
                         <font-awesome-icon icon="user" class="mr-2"/>
                         <span class="nav-label">Login</span>
                     </router-link>
